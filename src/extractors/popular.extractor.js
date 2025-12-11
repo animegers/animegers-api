@@ -10,7 +10,7 @@ export default async function extractPopularData($) {
         const id = $el.find(".film-detail .film-name a").attr("href")?.split("/").pop();
         const data_id = $el.find(".film-poster").attr("data-id");
         const title = $el.find(".film-detail .film-name a").text().trim();
-        const japanese_title = $el.find(".film-detail .film-name a").attr("data-jname")?.trim();
+        const jname = $el.find(".film-detail .film-name a").attr("data-jname")?.trim();
         const poster = $el.find(".film-poster img").attr("data-src") || $el.find(".film-poster img").attr("src");
 
         // Extract show type like "TV", "Movie", etc.
