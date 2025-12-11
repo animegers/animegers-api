@@ -38,7 +38,7 @@ export default async function extractPopularData($) {
           data_id,
           id,
           title,
-          japanese_title,
+          jname,
           poster,
           tvInfo,
           adultContent,
